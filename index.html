@@ -3,50 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiProDatos | Análisis y Datos</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            max-width: 500px;
-        }
-        h1 { color: #2c3e50; margin-bottom: 0.5rem; }
-        p { color: #7f8c8d; }
-        .badge {
-            background: #27ae60;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        .footer { margin-top: 2rem; font-size: 0.9rem; border-top: 1px solid #eee; pt: 1rem; }
-    </style>
+    <title>Biprodatos | Academia de Power BI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <div class="badge">Próximamente</div>
-        <h1>biprodatos.com</h1>
-        <p>Bienvenido a mi espacio de análisis de datos. Actualmente estoy construyendo algo increíble usando los recursos de GitHub Education.</p>
-        
-        <div class="footer">
-            <p>Sigue mi progreso en GitHub</p>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="bg-white shadow-sm py-4 px-8 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-2xl font-bold text-yellow-500">BIPRO<span class="text-gray-800">DATOS</span></div>
+        <div class="space-x-6">
+            <a href="#cursos" class="hover:text-yellow-500 transition">Cursos</a>
+            <a href="#practicas" class="hover:text-yellow-500 transition">Prácticas</a>
+            <a href="#" class="bg-yellow-500 text-white px-5 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition">Acceso Alumnos</a>
         </div>
-    </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-20 px-8 text-center">
+        <h1 class="text-5xl font-extrabold mb-4">Domina Power BI con Inteligencia Artificial</h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Transforma datos en decisiones. Formación práctica apoyada en las mejores herramientas de GitHub y IA.</p>
+        <a href="#practicas" class="bg-yellow-500 text-white px-8 py-3 rounded-full text-lg font-bold hover:scale-105 transition transform inline-block">Empezar Práctica Ahora</a>
+    </header>
+
+    <section id="cursos" class="py-16 px-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestros Módulos de Especialización</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-database text-3xl text-yellow-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Power Query & ETL</h3>
+                <p class="text-gray-600">Aprende a limpiar y transformar datos como un profesional usando IA para optimizar procesos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-calculator text-3xl text-yellow-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">DAX Avanzado</h3>
+                <p class="text-gray-600">Crea medidas complejas y cálculos inteligentes para reportes de alto impacto.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                <i class="fas fa-chart-line text-3xl text-yellow-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Visualización Pro</h3>
+                <p class="text-gray-600">Diseña tableros de control con storytelling y UX aplicada a los datos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="practicas" class="bg-yellow-50 py-16 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 italic">Laboratorio de Prácticas Biprodatos</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
+                <p class="text-lg mb-6 text-gray-700">Utilizamos <strong>GitHub Classroom</strong> para asignarte entornos de trabajo reales. Recibirás tu propio repositorio con datos y plantillas.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="AQUÍ_TU_LINK_DE_CLASSROOM" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-black">
+                        <i class="fab fa-github text-xl"></i> Aceptar Práctica #1
+                    </a>
+                    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-blue-700">
+                        <i class="fas fa-book"></i> Guía de Usuario
+                    </a>
+                </div>
+                <p class="mt-4 text-sm text-gray-500 italic font-medium">* Necesitas una cuenta de GitHub activa para acceder.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <p>&copy; 2026 Biprodatos.com | Potenciado por GitHub Education & IA</p>
+    </footer>
+
 </body>
 </html>
